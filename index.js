@@ -86,4 +86,17 @@
     //     res.write(uc("welcome to my page"));
     //     res.end();
     // }).listen(8080)
-  
+      
+
+
+    const { error } = require("console")
+const { write } = require("fs")
+const http = require("http")
+
+    http.createServer((req,res)=>{
+       
+        res.write("<h1> hello i am riya i am shivani's friend</h1>")
+        res.end();
+    }).listen(8000,()=>{
+        console.log(" server is rennng on 8000 port")
+    });
