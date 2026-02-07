@@ -90,12 +90,3 @@
 
 
   
-const http = require("http")
-
-    http.createServer((req,res)=>{
-       
-        res.write("<h1> hello i am riya i am shivani's friend</h1>")
-        res.end();
-    }).listen(8000,()=>{
-        console.log(" server is rennng on 8000 port")
-    });
