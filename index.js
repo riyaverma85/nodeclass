@@ -91,22 +91,37 @@
 
   //////////////////////////////////////combine pages ////////////////////////////////////////
 
-  const express =require("express")
-  const app = express();
+//   const express =require("express")
+//   const app = express();
  
-  app.get("/",(req,res)=>{
-    res.send("<h1>welcome to my page</h1>")
-  })
-app.get("/home",(req,res)=>{
-    res.send("<h1>this is home page</h1>")
-})
-app.get("/about",(req,res)=>{
-    res.send("<h1>this is about page</h1>")
-})
-app.get("/contact",(req,res)=>{
-    res.send("<h1>this is contact page</h1>")
-})
+//   app.get("/",(req,res)=>{
+//     res.send("<h1>welcome to my page</h1>")
+//   })
+// app.get("/home",(req,res)=>{
+//     res.send("<h1>this is home page</h1>")
+// })
+// app.get("/about",(req,res)=>{
+//     res.send("<h1>this is about page</h1>")
+// })
+// app.get("/contact",(req,res)=>{
+//     res.send("<h1>this is contact page</h1>")
+// })
 
-  app.listen(8000,()=>{
+//   app.listen(8000,()=>{
+//     console.log("server is running on port 8000")
+//   })
+
+
+
+const express =require("express")
+const app = express();
+const ejs = require("ejs")
+const stuRote = require("./routes/stuRouter")
+ 
+app.set("view engine","ejs")
+
+app.use("/",stuRote);
+
+app.listen(8000,()=>{
     console.log("server is running on port 8000")
-  })
+})
