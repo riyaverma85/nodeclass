@@ -118,7 +118,7 @@
  const ejs = require("ejs")
  const stuRote = require("./routes/stuRouter")
  
-app.set("view engine","ejs")
+ app.set("view engine","ejs")
 
 app.use("/",stuRote);
 
