@@ -113,7 +113,7 @@
 
 
 
-const express =require("express")
+ const express =require("express")
 const app = express();
 const ejs = require("ejs")
 const stuRote = require("./routes/stuRouter")
