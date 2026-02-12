@@ -117,11 +117,15 @@
  const app = express();
  const ejs = require("ejs")
  const stuRote = require("./routes/stuRouter")
- 
+ const mongoose = require("mongoose")
+
+ mongoose.connect("mongodb://localhost:27017/studentdb").then(()=>{
+    console.log("connected to database")
+ })
  app.set("view engine","ejs")
 
  app.use("/",stuRote);
 
  app.listen(8000,()=>{
     console.log("server is running on port 8000")
-})
+});
