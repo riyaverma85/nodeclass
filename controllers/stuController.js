@@ -10,7 +10,7 @@ const facultyPage = (req,res)=>{
     res.render("faculty")
 }
 const coursePage = (req,res)=>{
-    res.render("services")
+    res.render("course")
 }
 const contactPage = (req,res)=>{
     res.render("contact")

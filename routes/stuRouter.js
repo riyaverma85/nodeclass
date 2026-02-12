@@ -6,7 +6,7 @@ route.get("/",stuController.homePage);
 route.get("/home",stuController.homePage);
 route.get("/about",stuController.aboutPage);
 route.get("/faculty",stuController.facultyPage);
-route.get("/courses",stuController.servicesPage);
+route.get("/course",stuController.coursePage);
 route.get("/contact",stuController.contactPage);
 
 module.exports = route;
