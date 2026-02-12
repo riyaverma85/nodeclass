@@ -127,5 +127,5 @@
  app.use("/",stuRote);
 
  app.listen(8000,()=>{
-    console.log("server i running on port 8000")
+    console.log("server  running on port 8000")
 });
