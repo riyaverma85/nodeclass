@@ -114,7 +114,7 @@
 ////////////////////////// add   mongoode.............///////////////////////////////////////
 
   const express =require("express")
- const app = express();
+  const app = express();
  const ejs = require("ejs")
  const stuRote = require("./routes/stuRouter")
  const mongoose = require("mongoose")
