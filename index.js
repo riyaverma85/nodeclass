@@ -117,7 +117,7 @@
   const app = express();
   const ejs = require("ejs")
   const stuRote = require("./routes/stuRouter")
- const mongoose = require("mongoose")
+  const mongoose = require("mongoose")
 
  mongoose.connect("mongodb://localhost:27017/studentdb").then(()=>{
     console.log("connected to database")
